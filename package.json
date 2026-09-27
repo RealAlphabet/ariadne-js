@@ -1,0 +1,30 @@
+{
+  "name": "@animeo/ariadne",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Follow a JavaScript variable's dependencies and lift its computation out of a script or HTML page.",
+  "exports": "./src/index.js",
+  "bin": {
+    "ariadne": "./src/cli.js"
+  },
+  "scripts": {
+    "clean:voe": "node scripts/clean-voe.js",
+    "test": "node --test tests/*.test.js",
+    "extract:voe": "node src/cli.js fixtures/voe/loader.js --variable _0x1b9c97 --output /tmp/ariadne-voe.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "acorn": "8.15.0",
+    "eslint-scope": "8.4.0",
+    "parse5": "7.3.0"
+  },
+  "packageManager": "pnpm@10.12.1",
+  "devDependencies": {
+    "quickjs-emscripten": "0.32.0",
+    "terser": "5.51.2",
+    "webcrack": "2.16.0"
+  }
+}
