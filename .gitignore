@@ -1,0 +1,13 @@
+# Dependencies and local package-manager caches
+node_modules/
+.pnpm-store/
+
+# Build output and test coverage
+dist/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Temporary files and logs
+tmp/
+*.log
