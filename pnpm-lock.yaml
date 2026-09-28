@@ -28,18 +28,6 @@ importers:
         specifier: 2.16.0
         version: 2.16.0
 
-  ../..: {}
-
-  ../api: {}
-
-  ../app/client: {}
-
-  ../libraries/cache: {}
-
-  ../libraries/player: {}
-
-  ../libraries/site-manifest: {}
-
 packages:
 
   '@babel/code-frame@7.29.7':
